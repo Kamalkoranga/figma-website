@@ -8,6 +8,9 @@
     --cyan-hover-color: #6af3e1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -94,7 +97,10 @@ a.btn {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 400ms;
-    display:inline-block;
+}
+
+section a.btn {
+    display: inline-block;
 }
 
 a.btn.cyan {
