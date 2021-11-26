@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="glider.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
@@ -84,7 +85,7 @@
 
         <section class="about-section">
             <h2>About Us</h2>
-            
+
             <div class="section-content">
                 <div class="about-description">
                     <p>
@@ -117,6 +118,89 @@
             <a href="#" class="btn cyan">View All</a>
         </section>
     </div>
+
+    <!-- Testimonials Section -->
+
+    <section class="testimonials-section">
+        <div class="wrapper">
+            <h2>Testimonials</h2>
+
+            <div class="testimonials-container">
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. 
+                                </p>
+                                <div class="name">
+                                    <strong> Darlene Richards</strong>, Amazon
+                                </div>
+                            </div>
+                            <img src="images/testominals.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. 
+                                </p>
+                                <div class="name">
+                                    <strong> Peter William</strong>, Louis Vuitton
+                                </div>
+                            </div>
+                            <img src="images/testimonials1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. 
+                                </p>
+                                <div class="name">
+                                    <strong> Tara Greeni</strong>,  Ferrari
+                                </div>
+                            </div>
+                            <img src="images/testimonials2.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <span class="slider-next">
+                    <img src="images/left-arow.svg" alt="">
+                </span>
+
+                <span class="slider-prev">
+                    <img src="images/right-arrow.svg" alt="">
+                </span>
+
+                <div role="tablist" class="dots-container">
+                    <div class="dots">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="glider.min.js"></script>
+
+    <script>
+        new Glider(document.querySelector(".testimonials"), {
+            slidesToShow: 1,
+            dots:'.dots',
+            arrows: {
+                prev: '.slider-prev',
+                next: '.slider-next',
+            },
+        });
+    </script>
 
     <script src="main.js"></script>
 </body>
