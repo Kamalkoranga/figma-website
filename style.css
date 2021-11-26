@@ -17,6 +17,18 @@ body {
     font-family:"Roboto", sans-serif;
 }
 
+p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+section {
+    padding-top: 100px;
+}
+section p {
+    color:var(--dark-color);
+}
+
 /* Nav-bar */
 
 .wrapper {
@@ -284,7 +296,8 @@ a.btn.cyan:hover {
     align-items: center;
 }
 
-.brands-section h2 {
+.brands-section h2,
+section h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     color: var(--dark-color);
@@ -293,7 +306,8 @@ a.btn.cyan:hover {
     position: relative;
 }
 
-.brands-section h2::after {
+.brands-section h2::after,
+section h2::after{
     content: "";
     width: 43px;
     height: 3px;
@@ -301,4 +315,29 @@ a.btn.cyan:hover {
     background: var(--red-color);
     top: 40px;
     transform : translateX(-43px)
+}
+
+/* About Section */
+
+.about-section .section-content{
+    display: flex;
+    align-items: center;
+}
+
+.about-section .section-content img {
+    margin-left: 100px;
+}
+
+/* Projects Section */
+
+.projects-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 18px;
+    margin-bottom: 42px;
+}
+
+.projects-gallery img {
+    width: 100;
+    object-fit: cover;
 }
